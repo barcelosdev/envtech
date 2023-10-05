@@ -1,0 +1,28 @@
+{
+    "title": "Redes sociais",
+    "options": [
+        {
+            "icon": "git-hub",
+            "name": "envtech-websolutions",
+            "href": "https://github.com/envtech-websolutions"
+        },
+        {
+            "icon": "linkedin",
+            "name": "Em breve",
+            "href": "",
+            "soon": true
+        },
+        {
+            "icon": "instagram",
+            "name": "Em breve",
+            "href": "",
+            "soon": true
+        },
+        {
+            "icon": "x",
+            "name": "Em breve",
+            "href": "",
+            "soon": true
+        }
+    ]
+}

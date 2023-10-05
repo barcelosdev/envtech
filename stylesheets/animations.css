@@ -1,0 +1,93 @@
+.translate-x-icon-infinite {
+    animation: translate-x-icon 1s linear infinite;
+}
+
+.logo-animation {
+    animation: logo 4s linear infinite;
+}
+
+.logo-shadow-overlay {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 30px;
+    width: 250px;
+
+    border-radius: 50%;
+
+    background: rgba(0, 0, 0, 0.1);
+    animation: logo-shadow-overlay 4s linear infinite;
+    z-index: 9;
+}
+
+.logo-shadow {
+    height: 30px;
+    width: 100px;
+    background: rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+
+    animation: logo-shadow 4s linear infinite;
+    z-index: 10;
+}
+
+@keyframes translate-x-icon {
+    0% {
+        transform: translateX(0);
+    }
+
+    50% {
+        transform: translateX(10%);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes logo {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(4%);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes logo-shadow-overlay {
+    0% {
+        filter: blur(12px);
+    }
+
+    50% {
+        filter: blur(10px);
+        background: rgba(0, 0, 0, 0.15);
+    }
+
+    100% {
+        filter: blur(12px);
+    }
+}
+
+@keyframes logo-shadow {
+    0% {
+        width: 140px;
+        filter: blur(10px);
+    }
+
+    50% {
+        width: 160px;
+        filter: blur(7px);
+        background: rgba(0, 0, 0, 0.2);
+    }
+
+    100% {
+        width: 140px;
+        filter: blur(10px);
+    }
+}

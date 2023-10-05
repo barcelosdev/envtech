@@ -1,0 +1,78 @@
+@import url("./animations.css");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --green-primary: #025146;
+  --green-light: #02695B;
+
+  --yellow-primary: #E7B925;
+  --yellow-hover: #cca420;
+
+  --gray-primary: #6D6D6D;
+  --gray-light: #A4A4A4;
+
+  --green-gradient: linear-gradient(to bottom, #025146, #02695B);
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #cccccc;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+#scroll-view::-webkit-scrollbar {
+  display: none;
+}
+
+body {
+  color: var(--gray-primary);
+  background: linear-gradient(to bottom, #FFFFFF, #f7f7f7);
+
+  scroll-behavior: smooth;
+}
+
+a,
+input,
+button {
+  transition: all .3s ease-in-out;
+}
+
+textarea {
+  transition: border .3s ease-in-out;
+}
+
+button:active {
+  opacity: 50%;
+}
+
+textarea:active,
+textarea:focus,
+input:active,
+input:focus {
+  outline: none;
+}
+
+.text-gray-gradient {
+  background: linear-gradient(120deg, #eeeeee 0%, #5c5c5c80 100%);
+}
+
+.text-green-gradient {
+  background: linear-gradient(120deg, #012924 0%, #025146 100%);
+}
+
+.text-gray-gradient,
+.text-green-gradient {
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

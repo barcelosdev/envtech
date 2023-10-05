@@ -1,0 +1,21 @@
+{
+    "title": "Menu",
+    "options": [
+        {
+            "id": "about",
+            "name": "Sobre nós"
+        },
+        {
+            "id": "services",
+            "name": "Serviços"
+        },
+        {
+            "id": "projects",
+            "name": "Nossos projetos"
+        },
+        {
+            "id": "contact",
+            "name": "Contato"
+        }
+    ]
+}

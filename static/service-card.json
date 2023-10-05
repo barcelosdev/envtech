@@ -1,0 +1,22 @@
+[
+    {
+        "icon": "assets/prototype.svg",
+        "label": "Prototipagem",
+        "description": "Design da interface e experiência do usuário"
+    },
+    {
+        "icon": "assets/client-side.svg",
+        "label": "Client-side",
+        "description": "Design da interface e experiência do usuário"
+    },
+    {
+        "icon": "assets/server-side.svg",
+        "label": "Server-side",
+        "description": "Design da interface e experiência do usuário"
+    },
+    {
+        "icon": "assets/deploy.svg",
+        "label": "Deploy",
+        "description": "Design da interface e experiência do usuário"
+    }
+]

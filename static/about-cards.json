@@ -1,0 +1,17 @@
+[
+    {
+        "title": "Missão",
+        "description": "Nossa missão é capacitar a transformação digital de nossos clientes, proporcionando soluções tecnológicas inovadoras que elevam a experiência do usuário.",
+        "icon": "target"
+    },
+    {
+        "title": "Visão",
+        "description": "Nossa visão é ser reconhecidos como líderes na criação de soluções web de ponta, contribuindo para um mundo digital mais seguro, acessível e envolvente.",
+        "icon": "vision"
+    },
+    {
+        "title": "Valores",
+        "description": "Busca pela excelência, inovação constante, integridade inabalável e o compromisso com a segurança e confiabilidade em tudo o que fazemos.",
+        "icon": "values"
+    }
+]
