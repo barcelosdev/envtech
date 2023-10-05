@@ -6,6 +6,8 @@ type IconList = {
     "target": JSX.Element
     "vision": JSX.Element
     "values": JSX.Element
+    "menu": JSX.Element
+    "close": JSX.Element
 }
 
 type IconProp = {

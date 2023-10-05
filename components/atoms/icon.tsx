@@ -3,7 +3,7 @@ import { twMerge } from "tailwind-merge";
 const Icon = (props: IconProp) => {
 
     const svgClass = twMerge("w-6 h-6 fill-none", props.svgClass);
-    const pathClass = twMerge("fill-[#F8F8F8]", props.pathClass);
+    const pathClass = twMerge("fill-gray-500", props.pathClass);
 
     const svgAttributes = {
         className: svgClass,
@@ -23,7 +23,9 @@ const Icon = (props: IconProp) => {
                 <path className={pathClass} d="M12.5 22.9166C16.5198 22.9166 19.7916 19.6448 19.7916 15.625C19.7916 11.6052 16.5198 8.33331 12.5 8.33331C8.47915 8.33331 5.20831 11.6052 5.20831 15.625C5.20831 19.6448 8.47915 22.9166 12.5 22.9166ZM12.5 10.4166C15.3719 10.4166 17.7083 12.7531 17.7083 15.625C17.7083 18.4969 15.3719 20.8333 12.5 20.8333C9.6281 20.8333 7.29165 18.4969 7.29165 15.625C7.29165 12.7531 9.6281 10.4166 12.5 10.4166ZM11.4583 2.08331H7.29165V7.83123C8.53819 6.99709 9.96746 6.47576 11.4583 6.31144V2.08331ZM17.7083 2.08331H13.5416V6.31144C15.0325 6.47576 16.4618 6.99709 17.7083 7.83123V2.08331Z" />
                 <path className={pathClass} d="M10.4365 16.4698L9.94897 19.3094L12.5 17.9687L15.0511 19.3094L14.5636 16.4698L16.6281 14.4573L13.7761 14.0427L12.5 11.4583L11.224 14.0427L8.37189 14.4573L10.4365 16.4698Z" />
             </>
-        )
+        ),
+        "menu": <path className={pathClass} d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />,
+        "close": <path className={pathClass} d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
     }
 
     return (

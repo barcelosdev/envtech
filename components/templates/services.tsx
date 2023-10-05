@@ -16,23 +16,20 @@ const Services = ({ content }: Services) => {
                 </span>
             </div>
 
-            <div className="flex justify-between items-center w-full">
-                {content.map((e, index) => {
+            <div className="flex justify-center items-center gap-12 w-full">
+                {content.map((card, index) => {
                     return (
                         <motion.div
                             key={index}
                             initial={{ opacity: 0, y: 80 }}
                             whileInView={{ opacity: 1, y: 0 }}
-                            transition={{
-                                ease: "easeIn",
-                                duration: index === 0 ? 1 : (index - (index / 2))
-                            }}
+                            transition={{ ease: "easeIn", duration: index / 2 }}
                         >
                             <ServiceCard
                                 key={index}
-                                icon={e.icon}
-                                label={e.label}
-                                description={e.description}
+                                icon={card.icon}
+                                label={card.label}
+                                description={card.description}
                             />
                         </motion.div>
                     )

@@ -1,5 +1,9 @@
 [
     {
+        "key": "about",
+        "option": "Sobre"
+    },
+    {
         "key": "services",
         "option": "serviços"
     },

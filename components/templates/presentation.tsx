@@ -8,15 +8,15 @@ import { scrollToSection } from "@/utils/functions";
 
 const Presentation = () => {
     return (
-        <Section id="start" className="flex-row justify-center gap-40 py-7">
-            <div className="flex flex-col justify-center items-center gap-8">
+        <Section id="start" className="flex-row justify-center gap-12 py-7 h-[75vh] lg:gap-40">
+            <div className="hidden flex-col justify-center items-center gap-8 md:flex">
                 <Image
                     src={logoSymbol}
                     alt="Env Tech Symbol, 2023."
-                    className="logo-animation text-transparent"
+                    className="logo-animation text-transparent min-w-[22rem]"
                 />
                 <span className="logo-shadow-overlay">
-                    <span className="logo-shadow">test</span>
+                    <span className="logo-shadow">shadow</span>
                 </span>
             </div>
             <motion.div

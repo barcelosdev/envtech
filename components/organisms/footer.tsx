@@ -8,7 +8,7 @@ import FooterCol from "../molecules/footer-col";
 
 const Footer = ({ menu, socialMedia }: Footer) => {
     return (
-        <footer className="flex justify-center items-center w-full h-[20rem] p-16 bg-emerald-950">
+        <footer className="flex justify-center items-center w-full h-[20rem] p-16 bg-gradient-to-t from-slate-950 to-emerald-950">
             <div className="flex justify-between items-start w-full h-full">
                 <div className="flex flex-col justify-between items-start h-full">
                     <Link href="/">
