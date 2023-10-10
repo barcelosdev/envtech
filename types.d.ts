@@ -44,32 +44,29 @@ type FooterColProps = {
     children: React.ReactNode
 }
 type SocialMedia = {
+    title: string
     icon: keyof IconList
     name: string
     href: string
     soon?: boolean
 }
+
+type Option = {
+    id?: string
+    name?: string
+    icon?: keyof IconList
+    href?: string
+    soon?: boolean
+}
+
+type Static = {
+    title: string
+    options: Option
+}
+
 type Footer = {
-    menu: {
-        title: string
-        options: [
-            {
-                id: string
-                name: string
-            }
-        ]
-    }
-    socialMedia: {
-        title: string
-        options: [
-            {
-                name: string
-                icon: keyof IconList
-                href: string
-                soon: string
-            }
-        ]
-    }
+    menu: Static[]
+    socialMedia: Static[]
 }
 
 type Services = {
