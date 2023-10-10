@@ -6,6 +6,9 @@ import FormGroup from "../organisms/form-group";
 import Section from "../organisms/section";
 import { motion } from "framer-motion";
 import emailjs from "@emailjs/browser"
+import TitleGroup from "../molecules/title-group";
+import Subtitle from "../atoms/subtitle";
+import Title from "../atoms/title";
 
 const serviceId = process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID;
 const templateId = process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID;
@@ -50,21 +53,18 @@ const Contact = () => {
             <motion.div
                 initial={{ opacity: 0 }}
                 whileInView={{ opacity: 1 }}
-                transition={{
-                    ease: "easeIn",
-                    duration: 1
-                }}
+                transition={{ ease: "easeIn", duration: 1 }}
             >
-                <div className="flex flex-col items-center gap-1 w-full mb-[3rem]">
-                    <span className="text-gray-light pl-[0.15rem] uppercase leading-none">
+                <TitleGroup className="items-center">
+                    <Subtitle>
                         ENTRE EM
-                    </span>
-                    <span className="text-[4rem] text-green-gradient font-bold uppercase leading-none">
+                    </Subtitle>
+                    <Title>
                         CONTATO
-                    </span>
-                </div>
+                    </Title>
+                </TitleGroup>
 
-                <div className="flex flex-col items-end gap-8 w-[43.75rem]">
+                <div className="flex flex-col items-end gap-8 p-8 md:p-0 md:py-8 w-screen md:w-[43.75rem]">
                     <FormGroup>
                         <FormField
                             name="fromName"

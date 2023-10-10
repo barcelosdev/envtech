@@ -5,27 +5,28 @@ import Icon from "../atoms/icon";
 import Link from "next/link";
 import { scrollToSection } from "../../utils/functions";
 import FooterCol from "../molecules/footer-col";
+import img from "@/public/white-logo.png";
+import Image from "next/image";
 
 const Footer = ({ menu, socialMedia }: Footer) => {
     return (
-        <footer className="flex justify-center items-center w-full h-[20rem] p-16 bg-gradient-to-t from-slate-950 to-emerald-950">
-            <div className="flex justify-between items-start w-full h-full">
-                <div className="flex flex-col justify-between items-start h-full">
+        <footer className="flex justify-center items-center w-full h-max md:h-[20rem] p-16 bg-gradient-to-t from-slate-950 to-emerald-950">
+            <div className="flex flex-col-reverse md:flex-row justify-between gap-24 md:gap-0 items-center md:items-start w-full h-full">
+                <div className="flex flex-col justify-between items-center md:items-start gap-8 md:gap-0 h-full">
                     <Link href="/">
-                        {/* eslint-disable-next-line @next/next/no-img-element */}
-                        <img
-                            className="h-10 transition-all duration-500 hover:scale-105"
+                        <Image
+                            className="w-52 transition-all duration-500 hover:scale-105"
                             alt="Logotipo da Env Tech na cor branca"
-                            src="white-logo.png"
+                            src={img}
                         />
                     </Link>
 
-                    <span className="text-[12px] text-gray-400">
+                    <span className="text-xs text-gray-400 text-center md:text-start">
                         Env Tech - Web Solutions. Vitória de Santo Antão, 2023.
                     </span>
                 </div>
 
-                <div className="flex justify-start items-start gap-44 w-[37.5rem]">
+                <div className="flex flex-col md:flex-row justify-start items-center md:items-start gap-24 md:gap-44 w-max md:w-[37.5rem]">
                     <FooterCol title={menu.title}>
                         {menu.options.map((option) => {
                             return (

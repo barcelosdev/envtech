@@ -7,6 +7,7 @@ import Title from "../atoms/title";
 import Subtitle from "../atoms/subtitle";
 import TitleGroup from "../molecules/title-group";
 import Icon from "../atoms/icon";
+import img from "@/public/working.jpg";
 
 type AboutUs = {
     content: any[]
@@ -20,7 +21,7 @@ type Card = {
 
 const Card = (props: Card) => {
     return (
-        <div className="flex items-center gap-4 p-4 w-full border border-gray-300 shadow-md rounded-xl">
+        <div className="flex items-start gap-4 p-4 w-full border border-gray-300 shadow-md rounded-xl md:items-center">
             <div className="flex flex-col justify-center items-center gap-2 w-max h-max">
                 <Icon icon={props.icon} svgClass="w-8 h-8" pathClass="fill-gray-500" />
                 <h2 className="font-semibold w-16 text-center">
@@ -48,9 +49,9 @@ const AboutUs = ({ content }: AboutUs) => {
 
     return (
         <motion.div {...animation}>
-            <Section id="about" className="items-start">
-                <div className="flex justify-center items-center gap-10">
-                    <div className="flex flex-col items-start gap-8 w-[31.25rem]">
+            <Section id="about" className="px-0 items-start md:px-[6.25rem]">
+                <div className="flex flex-col-reverse justify-between items-center gap-10 md:flex-row">
+                    <div className="flex flex-col items-start gap-8 px-12 md:w-[31.25rem]">
                         <TitleGroup>
                             <Subtitle>
                                 Sobre a
@@ -91,12 +92,11 @@ const AboutUs = ({ content }: AboutUs) => {
                         </div>
                     </div>
 
-                    <div className="flex justify-end w-[31.25rem]">
+                    <div className="flex justify-end">
                         <Image
-                            src="/working.jpg"
-                            alt="Homem trabalhando em sua mesa."
-                            width={400} height={600}
-                            className="border border-gray-300 rounded-3xl shadow-2xl shadow-gray-500"
+                            className="object-cover w-screen md:w-[25rem] h-[20rem] md:h-max md:rounded-3xl md:border md:border-gray-300 md:shadow-2xl md:shadow-gray-500"
+                            alt="Pessoa trabalhando em sua mesa."
+                            src={img}
                         />
                     </div>
                 </div>

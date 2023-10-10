@@ -3,20 +3,23 @@
 import Section from "../organisms/section";
 import { motion } from "framer-motion";
 import ServiceCard from "../organisms/service-card";
+import Title from "../atoms/title";
+import Subtitle from "../atoms/subtitle";
+import TitleGroup from "../molecules/title-group";
 
 const Services = ({ content }: Services) => {
     return (
         <Section id="services" className="gap-16">
-            <div className="flex flex-col items-center gap-1">
-                <span className="text-gray-light uppercase leading-none">
+            <TitleGroup className="items-center">
+                <Subtitle>
                     Nossos
-                </span>
-                <span className="text-[4rem] text-green-gradient font-bold uppercase leading-tight">
+                </Subtitle>
+                <Title>
                     Serviços
-                </span>
-            </div>
+                </Title>
+            </TitleGroup>
 
-            <div className="flex justify-center items-center gap-12 w-full">
+            <div className="flex flex-wrap flex-grow justify-center items-center gap-8 md:gap-12 w-screen">
                 {content.map((card, index) => {
                     return (
                         <motion.div
